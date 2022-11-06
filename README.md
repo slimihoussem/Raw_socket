@@ -5,7 +5,7 @@ while reading from the socket file descriptor reads data sent from the remote ad
 If you are interested in writing your own implementations of one of these protocols, or need to use a different transport-layer protocol, 
 you’ll need to use raw sockets. Raw sockets operate at the network OSI level, which means that transport-level headers such as TCP or UDP headers will not be automatically 
 decoded. If you are implementing a a transport-level protocol, you’ll have to write code to decode and encode the transport-level headers in yourapplication.
-- Attempting to read from a raw socket
+- Attempting to read from a raw socket:
 To see what happens when we read data from sockets, let’s use this C program that simply sniffs packets entering the system and prints out some information about 
 the packet as an example
 - Compiling this program with:
